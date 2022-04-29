@@ -1,0 +1,11 @@
+{
+  "name": "colorful",
+  "version": "0.0.1",
+  "description": "Make color colorful !",
+  "main": "index.js",
+  "repository": "https://github.com",
+  "author": "Wu JunYi <wu65830600@163.com>",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {}
+}
