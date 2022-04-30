@@ -3,7 +3,7 @@ export type colorfulConfig = {
   end: string;
   hex: boolean;
   st: number;
-  func: (color: string) => void;
+  func?: (color: string) => void;
 };
 
 function hexToRgbArr(hex: string): number[] {
@@ -54,6 +54,8 @@ export function CaculateColor(config: colorfulConfig): string {
     res.push(Math.round(start[i] + (end[i] - start[i]) * config.st));
   }
   const out: string = `rgb(${res[0]},${res[1]},${res[2]})`;
-  config.func(out);
+  if(config.func){
+    config.func(out);
+  }
   return out;
 }
