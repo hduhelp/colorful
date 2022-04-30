@@ -12,5 +12,5 @@ test('Test color', () => {
     func: changeColor,
   };
 
-  expect(CaculateColor(config)).toBe(undefined);
+  expect(CaculateColor(config)).toBe("rgb(26,195,225)");
 });
